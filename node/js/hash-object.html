@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        var person = {
+            firstname: "John",
+            lastname: "Doe",
+            age: 30,
+            fullname: () => person.firstname + " " + person.lastname,
+            tellSomething:  s => {
+                console.log(s);
+            },
+            greet:sayGreeting
+        }
+
+        function sayGreeting(s) {
+            console.log("Hello " + s);
+        }
+
+        var value = {
+            count: 10,
+            myperson: person
+        }
+        console.log(person.firstname);
+        console.log(person.lastname);
+        console.log(person.fullname());
+        console.log(value.myperson.fullname());
+        value.myperson.tellSomething("I Want to sleep");
+    </script>
+    
+</body>
+</html>

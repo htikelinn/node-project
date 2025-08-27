@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3, 4];
+        console.log("Before function call: " + arr);
+
+        function modifyArray(array) {
+            for (var i = 0; i < array.length; i++) {
+                array[i] += 100; 
+            }
+        }
+        modifyArray(arr);
+        console.log("After function call: " + arr);
+    </script>
+    
+</body>
+</html>

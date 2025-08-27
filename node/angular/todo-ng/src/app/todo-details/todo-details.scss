@@ -1,0 +1,93 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.card-header {
+  background-color: #6c5ce7;
+  color: white;
+  border-radius: 10px 10px 0 0 !important;
+  font-weight: 600;
+}
+.table {
+  margin-bottom: 0;
+}
+.table th {
+  font-weight: 600;
+  padding: 15px;
+}
+.table td {
+  padding: 15px;
+  vertical-align: middle;
+}
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.completed {
+  background-color: #e7f6e9;
+  color: #2ecc71;
+}
+.not-completed {
+  background-color: #fbeeee;
+  color: #e74c3c;
+}
+.btn-action {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin: 2px;
+  transition: all 0.2s;
+}
+.btn-delete {
+  background-color: #ffebee;
+  color: #e74c3c;
+  border: 1px solid #ffcdd2;
+}
+.btn-delete:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+.btn-complete {
+  background-color: #e8f5e9;
+  color: #2ecc71;
+  border: 1px solid #c8e6c9;
+}
+.btn-complete:hover {
+  background-color: #2ecc71;
+  color: white;
+}
+.btn-incomplete {
+  background-color: #fff3e0;
+  color: #f39c12;
+  border: 1px solid #ffe0b2;
+}
+.btn-incomplete:hover {
+  background-color: #f39c12;
+  color: white;
+}
+.loading-placeholder {
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+}
+.id-cell {
+  font-weight: 600;
+  color: #6c5ce7;
+}

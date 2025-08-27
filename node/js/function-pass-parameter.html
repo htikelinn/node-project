@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myMethod(s) {
+            console.log(s);
+        }
+        function yourMethod(y) {
+            y("Hello, World!");
+        }
+
+        yourMethod(myMethod);
+
+        (function doSomething(s) {
+            console.log("Doing something with: + s");
+        })("life is bad!");
+    </script>
+    
+</body>
+</html>

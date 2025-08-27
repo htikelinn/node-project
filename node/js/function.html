@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <h1>Show Function and Method</h1>
+   <script>
+    function doSomthing(s){
+        console.log(s);
+    }
+    var msg = doSomthing;
+    msg("Life is good!")
+    function add(x,y){
+        return x + y;
+    }
+    var sum =add(5,7);
+    console.log("Sum is: " + sum);
+
+    function doSomthingExtra(a){
+        a("Extra Work done!");
+    }
+    var next = doSomthingExtra;
+    next(doSomthing);
+    
+
+   </script> 
+</body>
+</html>

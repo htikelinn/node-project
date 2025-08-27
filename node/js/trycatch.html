@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkNumber(){
+            var number = document.getElementById("inputNumber").value;
+            try{
+                if(isNaN(number)){
+                    throw "Err1";
+                }
+                else if(number < 1 || number > 10){
+                    throw "Err2";
+                } else {
+                    document.getElementById("result").innerHTML = "Valid number: " + number;
+                }
+            }catch(err){
+                if(err === "Err1"){
+                    document.getElementById("result").innerHTML = "Please enter a valid number.";
+                } else if(err === "Err2"){
+                    document.getElementById("result").innerHTML = "Number must be between 1 and 10.";
+                } else {
+                    document.getElementById("result").innerHTML = "An unexpected error occurred.";
+                }
+            }
+        }
+    </script>
+    <div>
+        <input type="text" id="inputNumber" placeholder="Enter a number between 1 and 10">
+        <button onclick="checkNumber()">Check Number</button>
+
+        <h1 id="result"></h1>
+    </div>
+</body>
+</html>

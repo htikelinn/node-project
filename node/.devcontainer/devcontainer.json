@@ -1,0 +1,23 @@
+{
+    "name": "Node Dev Container",
+    "image": "node:latest", // Use latest Node official image
+    "workspaceFolder": "/home",
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+        "dbaeumer.vscode-eslint", // ESLint for JS/TS
+        "esbenp.prettier-vscode", // Prettier formatter
+        "ms-vscode.vscode-typescript-next", // Better TS/JS support
+        "firsttris.vscode-jest-runner", // For unit testing
+        "angular.ng-template", // Angular support
+        "dsznajder.es7-react-js-snippets", // React snippets
+        "mongodb.mongodb-vscode" // MongoDB extension for VS Code
+    ],
+    "forwardPorts": [
+        3000, // React
+        4200, // Angular
+        5173 // Vite
+    ],
+    "postCreateCommand": "npm install -g @angular/cli vite create-react-app"
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Function 2 Test</h2>
+   <script>
+    function doSomthing(s){
+        console.log(s);
+    }
+    function add(a,b){
+        return a + b;
+    }
+    // same above function
+    var sadd = (x,y) => x + y;
+    var dsth = s => console.log(s);
+    var sth = function(s){
+        console.log("Anonymous funciton says: " +s);
+    }
+    sth("Hello from anonymouts function!");
+    // hash literal object
+    var employee = {
+        name: "Htin Linn",
+        age: 30,
+        position: "Software Engineer",
+        something: function(sth){
+            console.log("Employee says: " +sth);
+        },
+        somethingElse:doSomthing
+    }
+    console.log('Name', employee.name);
+    console.log('Age', employee.age);
+    console.log('Position:', employee.position);
+    employee.somethingElse("Life depends on Liver!")
+   </script> 
+</body>
+</html>
