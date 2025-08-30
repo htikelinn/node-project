@@ -1,0 +1,14 @@
+.dairy-button {
+  background-image: url('images/categories/meats.jpg');
+  background-size: cover; /* This makes the image cover the entire button */
+  background-position: center; /* This centers the image in the button */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  /* You can add padding and other styles to make the button look nice */
+  padding: 10px 20px;
+  color: white; /* Choose a text color that stands out against the image */
+  border: none;
+  cursor: pointer;
+  /* Add a height and width to ensure the image is visible */
+  height: 50px; 
+  width: 150px;
+}
