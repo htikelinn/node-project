@@ -1,0 +1,7 @@
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+html{
+    background: hsl(0, 0%, 100%);
+}
