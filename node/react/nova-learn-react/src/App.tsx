@@ -1,15 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import Home from "./component/Home";
-import { isLoggedIn } from "./AuthService";
+import { isLoggedIn } from "./service/AuthService";
 import Login from "./component/Login";
 import type { ReactElement } from "react";
+import Register from "./component/Register";
 
 export default function App() {
   const beLogin = isLoggedIn();
 
   const AuthenticatedRoute = ({ children }: { children: ReactElement }) => {
-    return beLogin ? children : <Login />
+    return beLogin ? children : <Login />;
     // java programmer write like this
     // if (beLogin) {
     //   return children;
@@ -46,13 +47,13 @@ export default function App() {
                 </AuthenticatedRoute>
               }
             />
-                  <Route path="/login" element={<Login />} />
-            {/* <Route path='/about' element={<About />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            {/* <Route path='/contact' element={<Contact />} />
             <Route path='*' element={<NotFound />} /> */}
           </Routes>
         </div>
       </BrowserRouter>
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { loginApicall, setLoggedInUserName, setLoggedInUserNameRole, setToken } from '../AuthService';
+import { loginApicall, setLoggedInUserName, setLoggedInUserNameRole, setToken } from '../service/AuthService';
 import type { LoginDto } from '../dto/LoginDto';
 import { useNavigate } from 'react-router-dom';
 

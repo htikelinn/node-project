@@ -1,0 +1,9 @@
+{
+	"name": "TypeScript",
+	"image": "node:latest",
+	"workspaceFolder": "/workspaces",
+	"settings": {
+		"terminal.integrated.defaultProfile.linux": "bash"
+	},
+	"postCreateCommand": "npm install && npm install --save-dev jest"
+}
